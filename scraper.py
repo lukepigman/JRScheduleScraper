@@ -1,8 +1,6 @@
 
 import login
-import csv
-import rand
-import pickle
+import stripper
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from collections import Counter
@@ -38,7 +36,7 @@ time_slots = driver.find_elements_by_class_name("rbc-event-content")
 users = []
 
 for slots in time_slots:
-   users.append(rand.chopString(slots.text))
+   users.append(stripper.chopString(slots.text))
 
 print(Counter(users))
     

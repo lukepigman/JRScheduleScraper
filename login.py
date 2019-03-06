@@ -1,2 +1,2 @@
-emailText = "fb_email"
-passwordText = "fb_password"
+emailText = "" #your fb email goes here
+passwordText = "" # your fb password goes here
